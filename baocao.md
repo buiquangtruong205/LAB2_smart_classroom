@@ -39,7 +39,6 @@ Dựa trên các kết quả thu được trong quá trình phát triển model,
 Giao diện được xây dựng với phong cách hiện đại, tập trung vào trải nghiệm người dùng (UX) và tính trực quan của dữ liệu.
 
 ![Web Dashboard](./dashboard.png)
-*(Lưu ý: Bạn hãy chụp ảnh giao diện web và lưu tên là `dashboard.png` ở cùng thư mục với file báo cáo này)*
 
 #### 3.1. Thiết Kế UI/UX Cao Cấp
 *   **Thẩm mỹ:** Sử dụng nền Dark Mode với các hiệu ứng Glassmorphism (lớp phủ mờ) và Gradient (tím - xanh), tạo cảm giác công nghệ cao (Premium Feel).
