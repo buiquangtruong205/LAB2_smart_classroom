@@ -13,13 +13,13 @@ Dự án **AIoT Smart Classroom** được thiết kế nhằm tối ưu hóa vi
 Dựa trên các kết quả thu được trong quá trình phát triển model, chúng ta có cái nhìn sâu sắc về hiệu suất của hệ thống:
 
 #### 2.1. Phân Tích Dữ Liệu CO2 Theo Thời Gian
-![CO2 Time Series](https://raw.githubusercontent.com/buiquangtruong205/LAB2_smart_classroom/main/images/co2_plot.png) * (Lưu ý: Đây là mô tả cho ảnh biểu đồ CO2)*
+![CO2 Time Series](./lab2_aiot_public_dataset_deploy_2/lab2_aiot_public_dataset_deploy%202/outputs/figures/01_co2_time_series.png)
 
 *   **Nhận xét:** Biểu đồ cho thấy sự biến động rõ rệt của nồng độ CO2. Các đỉnh cao (spikes) lên tới hơn 2000 ppm tương ứng với những khoảng thời gian phòng học có mật độ người cao và cửa đóng kín. 
 *   **Ý nghĩa:** CO2 là một trong những feature quan trọng nhất để dự báo Occupancy. Sự sụt giảm nhanh chóng sau các đỉnh cho thấy hiệu quả của hệ thống thông gió hoặc khi người rời phòng.
 
 #### 2.2. Đánh Giá Mô Hình Qua Ma Trận Nhầm Lẫn (Confusion Matrix)
-![Confusion Matrix](https://raw.githubusercontent.com/buiquangtruong205/LAB2_smart_classroom/main/images/confusion_matrix.png)
+![Confusion Matrix](./lab2_aiot_public_dataset_deploy_2/lab2_aiot_public_dataset_deploy%202/outputs/figures/02_confusion_matrix.png)
 
 *   **Kết quả:** 
     *   **True Negative (4015):** Dự đoán chính xác phòng trống.
@@ -28,7 +28,7 @@ Dựa trên các kết quả thu được trong quá trình phát triển model,
 *   **Kết luận:** Mô hình đạt độ chính xác (Accuracy) trên 99%, cho thấy khả năng phân loại cực kỳ tin cậy, sẵn sàng cho việc triển khai thực tế.
 
 #### 2.3. Xác Suất Hiện Diện Trên Tập Test
-![Probability Plot](https://raw.githubusercontent.com/buiquangtruong205/LAB2_smart_classroom/main/images/prob_plot.png)
+![Probability Plot](./lab2_aiot_public_dataset_deploy_2/lab2_aiot_public_dataset_deploy%202/outputs/figures/03_occupancy_probability.png)
 
 *   **Phân tích:** Đồ thị xác suất cho thấy model duy trì mức xác suất thấp khi phòng trống và phản ứng cực kỳ nhanh (nhảy vọt lên 1.0) ngay khi có tín hiệu có người. Điều này chứng minh model không bị nhiễu bởi các biến động nhỏ của cảm biến.
 
@@ -38,7 +38,8 @@ Dựa trên các kết quả thu được trong quá trình phát triển model,
 
 Giao diện được xây dựng với phong cách hiện đại, tập trung vào trải nghiệm người dùng (UX) và tính trực quan của dữ liệu.
 
-![Web Dashboard](https://raw.githubusercontent.com/buiquangtruong205/LAB2_smart_classroom/main/images/dashboard_ui.png)
+![Web Dashboard](./dashboard.png)
+*(Lưu ý: Bạn hãy chụp ảnh giao diện web và lưu tên là `dashboard.png` ở cùng thư mục với file báo cáo này)*
 
 #### 3.1. Thiết Kế UI/UX Cao Cấp
 *   **Thẩm mỹ:** Sử dụng nền Dark Mode với các hiệu ứng Glassmorphism (lớp phủ mờ) và Gradient (tím - xanh), tạo cảm giác công nghệ cao (Premium Feel).
